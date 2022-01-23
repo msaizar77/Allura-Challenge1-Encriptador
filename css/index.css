@@ -9,7 +9,7 @@ div > textarea{
 #codificador{
     width: 600px;
 }
-#codificador > h1 {
+#codificador > h1,h3 {
     text-align: center;
 }
 #code-decode{

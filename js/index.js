@@ -5,6 +5,9 @@ var botonCopiarResultado = document.getElementById("botonCopiarResultado");
 botonEncriptar.addEventListener("click",function(){
 
     var aCodificar = document.getElementById("aCodificar");
+
+    if (!validarEntrada(aCodificar.value)) return;
+
     var resultado = encriptarTexto(aCodificar.value);
 
     var textResultado = document.getElementById("textResultado");
@@ -31,7 +34,11 @@ botonCopiarResultado.addEventListener("click",function(){
     var aCodificar = document.getElementById("aCodificar");
     var textResultado = document.getElementById("textResultado");
 
-    aCodificar.value = textResultado.value;
+    var txtEncriptado = textResultado.value;
+    navigator.clipboard.writeText(txtEncriptado);
+
     textResultado.value = "";    
+    aCodificar.value = "";
+    aCodificar.focus();
 
 })
