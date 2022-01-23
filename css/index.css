@@ -1,0 +1,26 @@
+div > button{
+    display: inline-block;
+    width: 138px;
+}
+div > textarea{
+    width: 280px;
+}
+
+#codificador{
+    width: 600px;
+}
+#codificador > h1 {
+    text-align: center;
+}
+#code-decode{
+    width: 280px;
+    display: inline-block;
+    vertical-align: top;
+}
+#resultado{
+    width: 280px;
+    display: inline-block;
+}
+#resultado > button {
+    width: 280px;
+}
