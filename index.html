@@ -1,27 +1,36 @@
 <!DOCTYPE html>
-<html lang="es">
-    <meta charset="UTF-8">
-    <head>
-        <link rel="stylesheet" href="css\index.css">
-    </head>
-    <body>
-        <div id="codificador">
-            <h1>Codificador/Decodificador</h1>
-            <h3>Aún sin estilos - Validación básica del INPUT</h3>
-            <div id="code-decode">
-                <textarea id="aCodificar" cols="30" rows="10"></textarea>
-                <button id="botonEncriptar">Encriptar</button>
-                <button id="botonDesencriptar">Desencriptar</button>
-            </div>
-            <div id="resultado">
-                <textarea id="textResultado" cols="30" rows="10"></textarea>
-                <button id="botonCopiarResultado">Copiar texto para desencriptar</button>
-            </div>
-        </div>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h1 class="titulo">código secreto</h1>
 
-        <script src="js/index.js"></script>
-        <script src="js/encriptar.js"></script>
-        <script src="js/desencriptar.js"></script>
-        <script src="js/validacion.js"></script>
-    </body>
+  <main class="main">
+    <section class="form box">
+      <form action="">
+        <label for="input-texto">Solo letras minúsculas, sin acento</label>
+        <input class="text-input" type="text" name="input-texto" id="input-texto" placeholder="Ingrese el texto aqui">
+        <input class="btn" type="submit" value="encriptar!" id="btn-encriptar">
+        <input class="btn" type="submit" value="desencriptar!" id="btn-desencriptar">
+      </form>
+    </section>
+  
+    <section class="msg box">
+      <h2 id="">Mensaje encriptada:</h2>
+      <input class="text-input" type="text" id="msg"></input>
+      <input class="btn" type="button" value="copiar" id="btn-copy">
+    </section>
+  </main>
+
+  <script src="js/index.js"></script>
+  <script src="js/encriptar.js"></script>
+  <script src="js/desencriptar.js"></script>
+  <script src="js/validacion.js"></script>
+
+</body>
 </html>
